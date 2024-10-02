@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="main.js" defer></script>
+    <title>Document</title>
+</head>
+<body class="bg-lime-300  p-10">
+    <div class="container mx-auto">
+        <h1 class="text-3xl mb-4 font-bold">CRUD CON AXIOS</h1> 
+        <form id="CrudForm">
+        <div>
+            <label for="name">nombre</label>
+            <input type="text" id="name"> 
+        </div>
+
+        <div>
+            <label for="LastName">Apellido</label>
+            <input type="text" id="LastName">
+        </div>
+
+        <div>
+            <label for="Phone">Telefono</label>
+            <input type="text" id="Phone">
+        </div>
+
+
+        </div>
+            <label for="Img">imagen</label>
+            <input type="text" id="Img">
+        </div>
+
+        <button type="submit">Guardar</button>
+
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Telefono</th>
+                <th>Imagen</th>
+            </tr>
+        </thead>
+        <tbody id="dataTable">
+            <!--Los dator iran aquí-->
+        </tbody>
+    </table>
+    </div>
+</body>
+</html>
